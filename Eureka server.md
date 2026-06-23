@@ -60,9 +60,41 @@ Heartbeat
 eureka only provide location
 Eureka = Register + Discover
 Eureka itself never calls services. It only tells WHERE service exists.
+Important Terminologies
+Eureka Server
+
+Stores all registered services.
+
+Example:
+
+EMPLOYEE-SERVICE → 8081
+
+DEPARTMENT-SERVICE → 8082
+Eureka Client
+
+Microservice which registers into Eureka.
+
+Example:
+
+Employee Service
+
+Department Service
+Service Discovery
+
+Process of finding service location.
+
+Example:
+
+Employee
+↓
+
+Find Department
+↓
+
+Eureka
 
 ----------------------------------------------------------------------------------
----
+
 # Eureka Server + Service Discovery (Spring Boot Microservices)
 
 ## Objective
